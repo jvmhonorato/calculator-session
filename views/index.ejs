@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+</head>
+<body>
+    <h1>Index</h1>
+    <form method="post" action="/calc">
+        <input type="text" name="num1">
+        <select name="op">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+        </select>
+        <input type="text" name="num2">
+        <input type="submit" value="calcular">
+    </form>
+    <% if(contas.length > 0){ %>
+        <h2>Contas</h2>
+        <ul>
+            <% contas.map(conta => { %>
+            <li><%= conta.num1 %> <%= conta.op %> <%= conta.num2 %> = <%= conta.total %></li>
+            <% }) %>
+        </ul>
+
+        <%}%>
+    
+</body>
+</html>

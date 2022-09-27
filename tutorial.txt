@@ -1,0 +1,16 @@
+1:npm init -y
+2: npm install express ejs express-session
+3: npm install cookie-parser body-parse
+4: create main index.js fazer todos os imports, os arquivos estáticos os middleware , as rotas e etc
+5: criar pasta views/index.ejs e calc.ejs
+6: em index criar formulário passadno os input selects e buttons
+7: instalar o body-parser pra conectar o name="" dos <input> do fomularios as  funções de calculo 
+8: após as condicionais das operações lançar o res.cookie
+
+9: OBS: converter num1 e num2 pr interios
+
+10: usr o {maxAge: 1000} em res.cookie ou o expires: data pra dizer quanto tempo o cookie permanece 
+
+11: não guradar nada sensivel no cookie
+
+12:passar session nos locais do cookie o session diferente cookie gera um id por sua vez é masi seguro
